@@ -1,12 +1,9 @@
 name: Daily Tech Fact Generator
 
 on:
-  # Run daily at midnight
   schedule:
     - cron: '0 0 * * *'
-  # Allow manual triggering
   workflow_dispatch:
-  # Run on pull requests
   pull_request:
     branches:
       - main
@@ -60,8 +57,6 @@ layout: default
 title: "Daily Tech Fact - {today}"
 date: {today}
 ---
-
-# Tech Fact of the Day
 
 {fact}
 
